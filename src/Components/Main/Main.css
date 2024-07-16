@@ -1,0 +1,188 @@
+.manu .nav img{
+    width: 50px;
+    border-radius: 50px;
+    
+}
+
+.manu{
+    min-height: 100vh;
+    flex: 1;
+    padding-bottom: 15vh;
+    position: relative;
+    overflow: hidden;
+}
+.manu .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+    overflow: hidden;
+}
+.manu .nav span{
+    color: aqua;
+}
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+.manu .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    
+}
+.manu .greet span{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+        background: -moz-linear-gradient(16deg, #4b90ff, #ff5546);
+        background: -o-linear-gradient(16deg, #4b90ff, #ff5546);
+        background: linear-gradient(16deg, #4b90ff, #ff5546);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+}
+
+.manu .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+
+.manu .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.manu .card svg{
+    width: 30px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+.manu .card p{
+    color: #585858;
+    font-size: 17px;
+}
+.manu .card:hover{
+    background-color: #dfe4ea;
+}
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+    overflow: hidden;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: #f0f4f9;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+.search-box svg{
+    width: 24px;
+    cursor: pointer;
+}
+.search-box svg:hover{
+    background-color: #dfe4ea;
+    color: #585858;
+}
+.search-box input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-size: 18;
+    
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.manu .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result .result-title img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.result .result-data svg{
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+@media (max-width:600px) {
+    .main-bottom input{
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom .search-box svg{
+        width: 25px;
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+}
